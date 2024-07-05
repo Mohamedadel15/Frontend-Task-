@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Frontend Task</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- main css File  -->
+    <link href="style.css" rel="stylesheet">
+    <!-- tailwind css File  -->
+    <link href="output.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <!-- js File Link -->
+    <script src="main.js" defer></script>
+
+    <!-- Font awesome CDN -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <section class="flex flex-col min-h-screen ">
+
+        <header class="bg-main text-white">
+            <!-- Navbar Section In Large Screens -->
+            <nav class="hidden md:flex container mx-auto  flex-row justify-between items-center p-4">
+                <h1 class="text-3xl font-bold capitalize">focal</h1>
+                <ul class="flex flex-row">
+                    <li class="px-3"><a class="header_link-hover" href="#">Shop by Category</a></li>
+                    <li class="px-3"><a class="header_link-hover" href="#">Shop by Device</a></li>
+                    <li class="px-3"><a class="header_link-hover" href="#">Collections</a></li>
+                    <li class="px-3"><a class="header_link-hover" href="#">Blog</a></li>
+                </ul>
+                <ul class="flex flex-row gap-6">
+                    <li class=" text-xl font-bold cursor-pointer">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </li>
+                    <li class=" text-xl font-bold cursor-pointer">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </li>
+                    <li class="font-bold cursor-pointer ">
+                        <ion-icon name="person-outline" class="text-xl "></ion-icon>
+                    </li>
+                    <li class=" text-xl  cursor-pointer relative">
+                        <p
+                            class="w-5 h-5 rounded-full bg-white text-xs text-black flex justify-center items-center cart_count">
+                            1</p>
+                        <ion-icon name="briefcase-outline" class="font-bold"></ion-icon>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Navbar Section In Small Screens -->
+            <nav class="flex md:hidden container mx-auto  flex-row justify-between items-center p-4">
+                <div class="flex items-center gap-3 ">
+                    <button class="focus:outline-none">Ic</button>
+                    <p>Ic</p>
+                </div>
+                <h1 class="text-3xl font-bold capitalize">focal</h1>
+                <button class="focus:outline-none">Ic</button>
+            </nav>
+
+        </header>
+
+        <!-- Main Section -->
+        <main class="container mx-auto flex flex-col gap-8 p-4">
+
+        </main>
+    </section>
+
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+/*# sourceMappingURL=style.css.map */
+
+.bg-main {
+    background-color: #212326;
+}
+
+.header_link-hover {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.header_link-hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: white;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+.header_link-hover:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.cart_count{
+    position: absolute;
+    top: -4px;
+    left: 12px;
+}
